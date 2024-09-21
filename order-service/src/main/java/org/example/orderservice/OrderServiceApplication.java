@@ -17,7 +17,7 @@ public class OrderServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(OrderServiceApplication.class, args);
     }
-
+    @Bean
     CommandLineRunner insertMockData(OrderService orderService, ItemService itemService) {
         return args -> {
             // Creating Orders
